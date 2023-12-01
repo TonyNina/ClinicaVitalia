@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>ClinicaVitalia</display-name>
+  <welcome-file-list>
+  	<welcome-file>logeo/logIn.jsp</welcome-file>
+  	<welcome-file>paciente/indexPacientes.jsp</welcome-file>
+  	<welcome-file>cita/indexCita.jsp</welcome-file>
+    <welcome-file>paciente/registrarPaciente.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>pacienteServelet</servlet-name>
+    <servlet-class>servlets.pacienteServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pacienteServelet</servlet-name>
+    <url-pattern>/pacienteServelet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PacienteServlet</servlet-name>
+    <servlet-class>servlets.PacienteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PacienteServlet</servlet-name>
+    <url-pattern>/PacienteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CitaServlet</display-name>
+    <servlet-name>CitaServlet</servlet-name>
+    <servlet-class>servlets.CitaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CitaServlet</servlet-name>
+    <url-pattern>/CitaServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
